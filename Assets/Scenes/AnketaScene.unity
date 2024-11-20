@@ -2134,7 +2134,7 @@ GameObject:
   - component: {fileID: 1094905930}
   - component: {fileID: 1094905929}
   - component: {fileID: 1094905928}
-  - component: {fileID: 1094905932}
+  - component: {fileID: 1094905931}
   m_Layer: 5
   m_Name: AnketaPanel
   m_TagString: Untagged
@@ -2229,7 +2229,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1094905926}
   m_CullTransparentMesh: 1
---- !u!114 &1094905932
+--- !u!114 &1094905931
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2238,11 +2238,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1094905926}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 844c296de48e5c64ab8c3c4ab8d7c434, type: 3}
+  m_Script: {fileID: 11500000, guid: 4425346b55f8506458acffd622d1806d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   nameInputField: {fileID: 1357240352}
   nameTmpText: {fileID: 731508571}
+  ageInputField: {fileID: 745929310}
+  birthDayYearTmpText: {fileID: 1089705410}
 --- !u!1 &1096751709
 GameObject:
   m_ObjectHideFlags: 0
@@ -2646,7 +2648,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1094905932}
+      - m_Target: {fileID: 1094905931}
         m_TargetAssemblyTypeName: AnketaScript, Assembly-CSharp
         m_MethodName: OnButtonUserName
         m_Mode: 1
@@ -2953,7 +2955,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1491489082}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1094905931}
+        m_TargetAssemblyTypeName: AnketaScript, Assembly-CSharp
+        m_MethodName: OnButtonUserAge
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1491489082
 MonoBehaviour:
   m_ObjectHideFlags: 0
