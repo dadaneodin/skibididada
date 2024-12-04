@@ -6,6 +6,7 @@ using TMPro;
 public class RandomScript : MonoBehaviour {
     [SerializeField] private TMP_InputField inputField;
     [SerializeField] private TMP_Text outputText;
+
     public int randomValue;
 
     private void GenerRandomValue(){
